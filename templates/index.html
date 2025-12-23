@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Micro App</title>
+</head>
+<body>
+    <h2>Kullanıcılar</h2>
+    <div class="container">
+        {% for u in users %}
+            <div class="card">{{ u.name }}</div>
+        {% endfor %}
+    </div>
+
+    <h2>Ürünler</h2>
+    <div class="container">
+        {% for p in products %}
+            <div class="card">{{ p.title }}</div>
+        {% endfor %}
+    </div>
+
+    <h2>Siparişler</h2>
+    <div class="container">
+        {% for o in orders %}
+            <div class="card">Sipariş ID: {{ o.id }} | Kullanıcı ID: {{ o.userId }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
