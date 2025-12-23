@@ -1,0 +1,46 @@
+/* Genel ayarlar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f7, #d9e2ec);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Başlıklar */
+h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+/* Kartlar */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover efekti */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Kart konteyner */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Responsive düzen */
+@media (max-width: 768px) {
+    .card { min-width: 100%; }
+}
